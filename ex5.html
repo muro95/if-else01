@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let grade1 = parseInt(prompt("Please enter your test score: "));
+    let grade2 = parseInt(prompt("Please enter your midterm score: "));
+    let grade3 = parseInt(prompt("Please enter your final score: "));
+    let finalgrade = (grade1 + grade2 + grade3)/3;
+    if (finalgrade >= 90){
+        alert("Congrats! You are top tier student!");
+    } else if (finalgrade >=80 && finalgrade < 90){
+        alert("You get a B");
+    }else if (finalgrade >=70 && finalgrade < 80){
+        alert("You get a C");
+    }else{
+        alert("You failed");
+    }
+
+</script>
+
+</body>
+</html>

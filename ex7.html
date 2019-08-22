@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+    <script>
+        let bill_1 = parseInt(prompt("Enter total number of phone call: "));
+        let bill_2 = parseInt(prompt("Enter your total number of message: "));
+        let date = parseInt(prompt("Which day di you register for the phone line: "));
+        let fee1 = bill_1 * 500;
+        let fee2= bill_2 * 100;
+        if (date >= 1 && date <16){
+            let totalbill = (fee1 + fee2);
+            document.write("Your phone bill for this month: " + totalbill + " VND");
+        }else if (date >= 16 && date <=31) {
+            let totalbill = (fee1 + fee2) * 0.5;
+            document.write("Congrats! You just get 50% discount for this month. Your total bill:  " + totalbill + " VND" );
+
+        }else{
+            alert("Error! Wrong data!");
+        }
+    </script>
+</body>
+</html>

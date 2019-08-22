@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let sale = parseInt(prompt("Please enter your sale in unit: "));
+    var bonus;
+    if (sale >= 1000) {
+        let bonus = sale * 0.2;
+        document.write("Your bonus for this month: " + bonus + " USD");
+    } else if (sale >= 500 && sale < 1000) {
+        bonus = sale * 0.1;
+        document.write("Your bonus for this month: " + bonus + " USD");
+    } else {
+        document.write("Sorry no bonus for this month");
+    }
+    let totalsale = sale + bonus;
+    document.write("You total profit: " + totalsale);
+</script>
+
+</body>
+</html>
